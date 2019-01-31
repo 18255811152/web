@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+黃鶴樓送孟浩然之古人行</br>
+古人西辞黄鹤楼,烟花三月下扬州。</br>
+孤帆远影碧空尽,唯见长江天际流。
+
+<!--居中标签-->
+<!--<center></center>-->
+<!--段落标签-->
+<!--<p></p>-->
+<!--标题标签-->
+<center>
+    <h1>aaa</h1>
+    <p>111</p>
+    <h2>bbb</h2>
+    <p>111</p>
+    <h3>ccc</h3>
+    <p>111</p>
+    <h4>ddd</h4>
+    <p>111</p>
+    <h5>eee</h5>
+    <p>111</p>
+    <h6>fff</h6>
+    <p>111</p>
+</center>
+<!--文字列表标签-->
+<h1>变成词典有以下几个品种</h1>
+<!--有序列表是有序的 1 2 3 依次排列-->
+<!--无序列表-->
+<ul>
+    <li>java编程词典
+    <li>vb编程词典
+    <li>vc编程词典
+    <li>c#编程词典
+</ul>
+<!--有序列表-->
+<ol>
+    <li>java编程词典
+    <li>vb编程词典
+    <li>vc编程词典
+    <li>c#编程词典
+</ol>
+<!--网格标签-->
+<table width="350" height="200" align="center" border="0.5" bgcolor="white">
+    <!--标题标签-->
+    <caption>成绩表</caption>
+    <!--表格行-->
+    <tr>
+        <!--表格列-->
+        <td align="center" valign="middle">姓名</td>
+        <td align="center" valign="middle">语文</td>
+        <td align="center" valign="middle">数学</td>
+        <td align="center" valign="middle">英语</td>
+    </tr>
+    <tr>
+        <!--表格列-->
+        <td align="center" valign="middle">张三</td>
+        <td align="center" valign="middle">62</td>
+        <td align="center" valign="middle">72</td>
+        <td align="center" valign="middle">24</td>
+    </tr>
+    <tr>
+        <!--表格列-->
+        <td align="center" valign="middle">李四</td>
+        <td align="center" valign="middle">77</td>
+        <td align="center" valign="middle">45</td>
+        <td align="center" valign="middle">63</td>
+    </tr>
+    <tr>
+        <!--表格列-->
+        <td align="center" valign="middle">王二</td>
+        <td align="center" valign="middle">77</td>
+        <td align="center" valign="middle">78</td>
+        <td align="center" valign="middle">34</td>
+    </tr>
+</table>
+
+<!--表单标签-->
+<!--action标签代表处理处理表单的url地址-->
+<!--method标签请求方式-->
+<!--name标签随便定义-->
+<!--onSubmit代表触发事件-->
+<!--target类似安卓开发中的启动模式 都有四种启动模式：_blank _parent _self  _top  默认第一种启动模式-->
+<!--_blank 在新窗口打开文件-->
+<!--_parent 是，上一級窗口打開文件-->
+<!--_self 同一窗口打開文件-->
+<!--_top 瀏覽器整個窗口打開-->
+<!--<form action="index.jsp" method="post|get" name="name" onSubmit="this" target="_top">-->
+<!--</form>-->
+
+<!--<input id="from1" name="from" formmethod="post" formaction="index.jsp"  type="text" checked="checked" width="dligit" height="dlight" maxLenght="dlight" >-->
+<input type="button" formaction="registandLogin.html">
+
+<!--下拉列表标记-->
+<!--name 用于指定列表名称-->
+<!--size 指定列表框中的选中数量 超出数量用滚动条查看-->
+<!--disable用于指定当前列表不能使用-->
+<!--multiple 让多行列表支持多选-->
+下拉列表框:
+<select name="select" size="5">
+    <option>数码</option>
+    <option>摄影</option>
+    <option>MP3</option>
+    <option>U 盘</option>
+    <option>电脑</option>
+    <option>数码</option>
+    <option>摄影</option>
+    <option>MP3</option>
+    <option>U 盘</option>
+    <option>电脑</option>
+</select>
+&nbsp;多行列表框(不可多选):
+<select name="select">
+    <option>数码</option>
+    <option>摄影</option>
+    <option>MP3</option>
+</select>
+&nbsp;多行列表框(可多选):
+<select name="select" size="3" multiple>
+    <option>数码</option>
+    <option>摄影</option>
+    <option>MP3</option>
+    <option>U 盘</option>
+    <option>电脑</option>
+</select>
+<!--textarea多行文本标签-->
+<form>
+<textarea cols="30" row="30" name="name" disabled="disabled" readonly="readonly" wrap="hard">
+默认值
+默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值
+默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值 默认值
+</textarea>
+</form>
+<!--超链接跟图片标记-->
+
+<table width="400" height="500" border="1" align="center">
+    <tr>
+        <td width="200" height="208"><img src="../image/def_image.png"></td>
+        <td width="200"><img src="../image/def_image.png"></td>
+    </tr>
+
+    <tr>
+        <td height="35" align="center"><a href="../html/message.html">查看详情</a></td>
+        <td align="center" valign="middle"><a href="../html/message.html">查看详情</a></td>
+    </tr>
+
+    <tr>
+        <td height="227"><img src="../image/def_image.png"></td>
+        <td><img src="../image/def_image.png"></td>
+    </tr>
+
+    <tr>
+        <td height="35" align="center" valign="middle"><a href="../html/message.html">查看详情</a></td>
+        <td height="35" align="center" valign="middle"><a href="../html/message.html">查看详情</a></td>
+    </tr>
+</table>
+<p style="color: red;cursor: hand" align="center" title="走一走,看一看啦">练习</p>
+
+<form action="testhtmltag.html">
+    <input type="submit" style="color: red;font-family: 新宋体;font-size: 18px" value="创建html页面,实现在页面中使用删除线样式标注商品特价">
+</form>
+<form action="testhtmltag2.html">
+    <input type="submit" style="color: red;font-family: 新宋体;font-size: 18px" value="创建html页面,并在其中添加表格，实现浏览网站信息时，经过表格中的某个单元格时，会显示相关的提示信息">
+</form>
+
+<form action="testhtmltag3.html">
+    <input type="submit" style="color: red;font-family: 新宋体;font-size: 18px" value="创建html页面,并在其中添加超链接,实现当鼠标经过超链接时,鼠标指针会变成不同的形状">
+</form>
+</body>
+</html>

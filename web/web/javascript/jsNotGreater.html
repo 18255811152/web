@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="color: blue" align="center">列举出累加和不大于10的所有自然数</p>
+    <script language="JavaScript">
+        var i=1;
+        var sum=i;
+        var result="";
+        document.write("累加和不大于10的所有自然数"+'<br>')
+        // while (sum<10){
+        //     sum=sum+i;
+        //     document.write(i+'<br>')
+        //     i++;
+        // }
+        document.write("do..while 累加和不大于10的所有自然数"+'<br>')
+        do {
+            sum=sum+i;
+            document.write(i+'<br>')
+            i++;
+        }while (sum<10)
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/jsaccount.css">
+</head>
+<body>
+<div id="CodeArea">
+    <textarea>
+    <html>
+    <body>
+        <script language="JavaScript">
+            function account(price, number) {
+                var CountNumber = price * number;
+                return CountNumber;
+            }
+        </script>
+       <script>
+            document.write(account(100, 85.5))
+        </script>
+    </body>
+    </html>
+    </textarea>
+</div>
+
+<div id="result" align="center">
+    <p align="center" style="color: red;font-size: 20px">运行结果</p>
+    <script>
+        document.write(account(100, 85.5))
+    </script>
+
+    <script language="JavaScript">
+        function account(price, number) {
+            var CountNumber = price * number;
+            return CountNumber;
+        }
+    </script>
+    <script>
+        document.write(account(100, 85.5))
+    </script>
+</div>
+</body>
+</html>

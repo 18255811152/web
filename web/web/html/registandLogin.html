@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="WrapHtml.html" name="myform" method="post" align="center" height="200" width="350">
+        <table >
+            <tr>
+                <td align="right">
+                    用户名:
+                </td>
+                <td>
+                    <input name="usernameName"type="text" id="usernameId" maxlength="20" minlength="3" class="form-control form-control-icon" placeholder="手机号/邮箱/用户名">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    密码:
+                </td>
+                <td>
+                    <input name="pswName" id="pswId" type="password" size="20" maxlength="20" minlength="6" class="form-control form-control-icon" placeholder="密码">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td align="right">
+                    确认密码:
+                </td>
+                <td>
+                    <input name="configpswName" id="configpswId"  type="password" minlength="6" maxlength="20" class="form-control form-control-icon" placeholder="确认密码">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    性别:
+                </td>
+                <td>
+                    <input name="sexName"  type="radio" class="hide-icon" value="男"  checked="checked" align="center"> 男
+                    <input name="sexName"  type="radio" class="hide-icon" value="女"  checked="checked" align="center"> 女
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    爱好:
+                </td>
+                <td>
+                    <input name="like"  type="checkbox" class="hide-icon" value="体育"> 体育
+                    <input name="like"  type="checkbox" class="hide-icon" value="旅游"> 旅游
+                    <input name="like"  type="checkbox" class="hide-icon" value="听音乐"> 听音乐
+                    <input name="like"  type="checkbox" class="hide-icon" value="看书"> 看书
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    E-mail:
+                </td>
+                <td>
+                    <input name="email"  type="email" size="20">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                <input name="Submit"  type="submit" value="确认保存" class="btn_grey" >
+                </td>
+                <td>
+                    <input name="Reset"  type="reset" id="reset" value="重新填写" class="btn_grey" >
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

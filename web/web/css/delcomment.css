@@ -1,0 +1,13 @@
+#del_comment {
+    width: 100%;
+    height: auto;
+    background-color: brown;
+}
+
+#del_comment persion {
+    margin-left: 100px;
+}
+
+#del_comment content {
+    margin-left: 100px;
+}

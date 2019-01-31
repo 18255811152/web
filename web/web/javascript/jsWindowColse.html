@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>注册页面写的多了  直接进行当前window的关闭操作</p>
+    <input type="button" id="button" value="请关闭当前页面" onclick="closeWebPage()" >
+    <a href="javascript.self.colse()">关闭窗口</a>
+    <script language="JavaScript">
+        // function colseWindow() {
+        //   /*  window.close();*/ /*亲自测试这种方法对于谷歌是没用的  对IE浏览器有用*/
+        //
+        //     window.opener=null;
+        //     window.open('','_self');
+        //     window.close();
+        //     alert("当前页面关闭")
+        // }
+
+        function closeWebPage() {
+            if (navigator.userAgent.indexOf("MSIE") > 0) {//close IE
+                if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {
+                    window.opener = null;
+                    window.close();
+                } else {
+                    window.open('', '_top');
+                    window.top.close();
+                }
+            } else if (navigator.userAgent.indexOf("Firefox") > 0) {//close firefox
+                window.location.href = 'about:blank ';
+            } else {//close chrome;It is effective when it is only one.
+                window.opener = null;
+                window.open('', '_self');
+                window.close();
+            }
+        }
+
+    </script>
+</body>
+</html>

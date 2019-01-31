@@ -1,0 +1,27 @@
+    /*a标签选择器*/
+    a{
+        font-family: 华文宋体;
+        font-size: 13px;
+        color: blue;
+    }
+    /*类别选择器*/
+    .one,.two,.three{
+        font-family: 华文宋体;
+        font-size: 13px;
+    }
+
+    .one{
+        color: blue;
+    }
+
+    .two{
+        color: brown;
+    }
+
+    .three{
+        color: black;
+    }
+    /*id选择器*/
+    #pswId{
+        font-size: 18px;
+    }

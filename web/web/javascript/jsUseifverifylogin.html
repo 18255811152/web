@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="form122" method="post" action="">
+    <table align="center">
+
+        <tr>
+            <td>用户名:</td>
+            <td><input type="text" name="user" id="user"></td>
+        </tr>
+        <tr>
+            <td>密碼:</td>
+            <td><input type="password" name="psw" id="psw"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="Button" value="确认" onclick="check()"></td>
+            <td><input type="reset" name="reset" id="reset" value="重置"></td>
+        </tr>
+    </table>
+</form>
+
+<script language="JavaScript">
+    function check() {
+        // alert("用户名为空,请重新输入");
+        var userValue = document.getElementById('user').value;
+        var pswValue = document.getElementById('psw').value;
+        if (userValue == '' || userValue == undefined || userValue == null) {
+            alert("用户名为空,请重新输入");
+        } else if (pswValue == '' || null == pswValue || undefined == pswValue) {
+            alert("密码为空,请重新输入");
+        }else{
+            alert(userValue + "  " + pswValue);
+            form122.submit();
+            alert("提交成功")
+        }
+    }
+</script>
+</body>
+</html>
