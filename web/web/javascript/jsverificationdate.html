@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    /*验证日期格式*/
+    function IsDate(sm,mystring) {
+        var reg = /^(\d{4})-(\d{2})-(\d{2})$/;
+        var str = mystring;
+        var arr = reg.exec(str);
+        if (str=="") return true;
+        if (!reg.test(str)&&RegExp.$2<=12&&RegExp.$3<=31){
+            alert("请保证"+sm+"中输入的日期格式为yyyy-mm-dd或正确的日期!");
+            return false;
+        }
+        return true;
+    }
+
+    /*验证身份证账号*/
+    function isCardNo(card)
+    {
+        // 身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X
+        var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+        if(reg.test(card) === false) {
+            alert("身份证输入不合法");
+            return false;
+        }
+        return true
+    }
+
+    /*实现倒计时*/
+    function timer(timeStr,item){
+        setInterval(function(){
+            let nowTime = new Date(timeStr) - new Date;
+            let minutes = parseInt(nowTime / 1000 / 60 % 60, 10);//计算剩余的分钟
+            let seconds = parseInt(nowTime / 1000 % 60, 10);//计算剩余的秒数
+            minutes = checkTime(minutes);
+            seconds = checkTime(seconds);
+            if(item==='day'){
+                let days = parseInt(nowTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数
+                let hours = parseInt(nowTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时
+                days = checkTime(days);
+                hours = checkTime(hours);
+                document.getElementById('timer').innerHTML=days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+            }else{
+                let hours = parseInt(nowTime / ( 1000 * 60 * 60), 10); //计算剩余的小时
+                hours = checkTime(hours);
+                document.getElementById("timer").innerHTML = hours + "小时" + minutes + "分" + seconds + "秒";
+            }
+        },1000);
+    }
+
+    function checkTime(i) {
+        //将0-9的数字前面加上0，例1变为01
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+</script>
+</body>
+</html>
